@@ -9,6 +9,7 @@ class HmallItemWebApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("123");
     }
 
 }
