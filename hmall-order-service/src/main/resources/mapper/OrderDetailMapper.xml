@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hmall.order.service.mapper.OrderInfoMapper">
+
+    <resultMap id="result1" type="com.hmall.pojo.OrderInfo" autoMapping="true">
+        <id property="id" column="id"></id>
+        <collection property="orderDetailList" autoMapping="true" ofType="com.hmall.pojo.OrderDetail">
+            <id property="id" column="order_detail_id"></id>
+        </collection>
+    </resultMap>
+
+    <select id="getOrderAndDetail" resultMap="result1" parameterType="int">
+    select o.*,
+od.`id` order_detail_id,od.`img_url`,od.`order_id`,od.`order_price`,od.`sku_id`,od.`sku_name`,od.`sku_num`
+ from order_info o join order_detail od on o.`id`=od.`order_id`
+where o.`id`=#{0}
+    </select>
+
+</mapper>

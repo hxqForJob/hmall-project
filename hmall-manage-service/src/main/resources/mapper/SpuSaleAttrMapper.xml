@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hmall.manage.service.mapper.SpuSaleAttrMapper">
+    <resultMap id="result1" type="com.hmall.pojo.SpuSaleAttr" autoMapping="true">
+        <id property="id" column="id"></id>
+        <collection property="spuSaleAttrValueList" ofType="com.hmall.pojo.SpuSaleAttrValue" autoMapping="true">
+            <id property="id" column="sav_id"></id>
+        </collection>
+    </resultMap>
+    <select id="getSpuSaleAttrInfoBySpuId" resultMap="result1" parameterType="int">
+SELECT sa.*,sav.id sav_id,sav.spu_id spu_id,sav.sale_attr_id sale_attr_id,sav.sale_attr_value_name sale_attr_value_name FROM
+spu_sale_attr  sa
+JOIN spu_sale_attr_value sav
+ON  sa.sale_attr_id =sav.sale_attr_id
+AND sa.spu_id=sav.spu_id
+WHERE sa.spu_id=#{spuId}
+    </select>
+
+    <select id="getSpuSaleAttrAndSelectValue" resultMap="result1" parameterType="int">
+        SELECT spa.`id` ,sp.`id` spu_id,
+spa.`sale_attr_id`,
+spa.`sale_attr_name`,
+spav.`id` sav_id,
+spav.`sale_attr_value_name`, IF(skav.`sku_id` IS NULL,0,1) is_checked
+ FROM
+spu_info sp JOIN
+ spu_sale_attr spa ON sp.`id`=spa.`spu_id` JOIN
+ spu_sale_attr_value spav ON sp.`id`=spav.`spu_id` AND spa.`sale_attr_id`=spav.`sale_attr_id`
+ LEFT JOIN sku_sale_attr_value skav ON spa.`sale_attr_id`=skav.`sale_attr_id` AND spav.`id`=skav.`sale_attr_value_id`  AND skav.`sku_id`=#{arg1}
+ WHERE sp.`id`=#{arg0} ORDER BY spa.`sale_attr_id`,spav.`id`
+    </select>
+</mapper>

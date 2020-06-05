@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hmall.manage.service.mapper.SkuInfoMapper">
+    <resultMap id="result1" type="com.hmall.pojo.SkuInfo" autoMapping="true">
+        <id property="id" column="id"></id>
+        <collection property="skuImageList" ofType="com.hmall.pojo.SkuImage" autoMapping="true">
+            <id property="id" column="sku_image_id"></id>
+        </collection>
+    </resultMap>
+    <select id="getSkuInfoAndImageById" resultMap="result1" parameterType="int">
+          SELECT si.*,sm.id sku_image_id,sm.sku_id,sm.img_name,sm.img_url,sm.spu_img_id,sm.is_default
+ FROM sku_info si JOIN
+  sku_image sm
+  ON si.id=sm.sku_id WHERE sm.sku_id=#{arg0}
+    </select>
+</mapper>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gware-manage" />
+        <module name="hmall-bean" />
+        <module name="hmall-cart-service" />
+        <module name="hmall-cart-web" />
+        <module name="hmall-common" />
+        <module name="hmall-interface" />
+        <module name="hmall-item-web" />
+        <module name="hmall-list-service" />
+        <module name="hmall-list-web" />
+        <module name="hmall-manage-service" />
+        <module name="hmall-manage-web" />
+        <module name="hmall-order-service" />
+        <module name="hmall-order-web" />
+        <module name="hmall-passport-web" />
+        <module name="hmall-payment-service" />
+        <module name="hmall-payment-web" />
+        <module name="hmall-service-common" />
+        <module name="hmall-user-service" />
+        <module name="hmall-user-web" />
+        <module name="hmall-web-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gware-manage" target="1.8" />
+      <module name="hmall-bean" target="1.8" />
+      <module name="hmall-cart-service" target="1.8" />
+      <module name="hmall-cart-web" target="1.8" />
+      <module name="hmall-common" target="1.8" />
+      <module name="hmall-interface" target="1.8" />
+      <module name="hmall-item-web" target="1.8" />
+      <module name="hmall-list-service" target="1.8" />
+      <module name="hmall-list-web" target="1.8" />
+      <module name="hmall-manage-service" target="1.8" />
+      <module name="hmall-manage-web" target="1.8" />
+      <module name="hmall-order-service" target="1.8" />
+      <module name="hmall-order-web" target="1.8" />
+      <module name="hmall-parent" target="1.8" />
+      <module name="hmall-passport-web" target="1.8" />
+      <module name="hmall-payment-service" target="1.8" />
+      <module name="hmall-payment-web" target="1.8" />
+      <module name="hmall-service-common" target="1.8" />
+      <module name="hmall-user-service" target="1.8" />
+      <module name="hmall-user-web" target="1.8" />
+      <module name="hmall-web-common" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hmall-cart-service" options="" />
+      <module name="hmall-cart-web" options="" />
+      <module name="hmall-item-web" options="" />
+      <module name="hmall-list-service" options="" />
+      <module name="hmall-list-web" options="" />
+      <module name="hmall-manage-service" options="" />
+      <module name="hmall-manage-web" options="" />
+      <module name="hmall-order-service" options="" />
+      <module name="hmall-order-web" options="" />
+      <module name="hmall-passport-web" options="" />
+      <module name="hmall-payment-service" options="" />
+      <module name="hmall-payment-web" options="" />
+      <module name="hmall-user-service" options="" />
+      <module name="hmall-user-web" options="" />
+    </option>
+  </component>
+</project>

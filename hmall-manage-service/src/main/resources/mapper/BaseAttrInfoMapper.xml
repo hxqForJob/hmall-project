@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hmall.manage.service.mapper.BaseAttrInfoMapper">
+    
+    <resultMap id="result1" type="com.hmall.pojo.BaseAttrInfo" autoMapping="true">
+        <id property="id" column="id"></id>
+        <collection property="attrValueList" autoMapping="true" ofType="com.hmall.pojo.BaseAttrValue">
+            <id property="id" column="attr_value_id"></id>
+        </collection>
+    </resultMap>
+    
+    <select id="getBaseAttrByCataId" resultMap="result1" parameterType="int">
+     SELECT ba.*,bav.`id` attr_value_id ,bav.`value_name`,bav.`attr_id` FROM
+base_attr_info  ba JOIN base_attr_value bav ON ba.`id`=bav.`attr_id`
+WHERE ba.`catalog3_id`=#{catalog3Id}
+    </select>
+
+    <select id="findByValueId" resultMap="result1" >
+        SELECT ba.*,bav.`id` attr_value_id ,bav.`value_name`,bav.`attr_id`
+        FROM base_attr_info ba JOIN base_attr_value bav ON ba.id=bav.attr_id WHERE bav.id IN(${valueIds})
+    </select>
+</mapper>

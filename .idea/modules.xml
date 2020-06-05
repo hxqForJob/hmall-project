@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gware-manage/gware-manage.iml" filepath="$PROJECT_DIR$/gware-manage/gware-manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-bean/hmall-bean.iml" filepath="$PROJECT_DIR$/hmall-bean/hmall-bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-cart-service/hmall-cart-service.iml" filepath="$PROJECT_DIR$/hmall-cart-service/hmall-cart-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-cart-web/hmall-cart-web.iml" filepath="$PROJECT_DIR$/hmall-cart-web/hmall-cart-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-common/hmall-common.iml" filepath="$PROJECT_DIR$/hmall-common/hmall-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-interface/hmall-interface.iml" filepath="$PROJECT_DIR$/hmall-interface/hmall-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-item-web/hmall-item-web.iml" filepath="$PROJECT_DIR$/hmall-item-web/hmall-item-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-list-service/hmall-list-service.iml" filepath="$PROJECT_DIR$/hmall-list-service/hmall-list-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-list-web/hmall-list-web.iml" filepath="$PROJECT_DIR$/hmall-list-web/hmall-list-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-manage-service/hmall-manage-service.iml" filepath="$PROJECT_DIR$/hmall-manage-service/hmall-manage-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-manage-web/hmall-manage-web.iml" filepath="$PROJECT_DIR$/hmall-manage-web/hmall-manage-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-order-service/hmall-order-service.iml" filepath="$PROJECT_DIR$/hmall-order-service/hmall-order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-order-web/hmall-order-web.iml" filepath="$PROJECT_DIR$/hmall-order-web/hmall-order-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hmall-parent.iml" filepath="$PROJECT_DIR$/.idea/hmall-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-passport-web/hmall-passport-web.iml" filepath="$PROJECT_DIR$/hmall-passport-web/hmall-passport-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-payment-service/hmall-payment-service.iml" filepath="$PROJECT_DIR$/hmall-payment-service/hmall-payment-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-payment-web/hmall-payment-web.iml" filepath="$PROJECT_DIR$/hmall-payment-web/hmall-payment-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-service-common/hmall-service-common.iml" filepath="$PROJECT_DIR$/hmall-service-common/hmall-service-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-user-service/hmall-user-service.iml" filepath="$PROJECT_DIR$/hmall-user-service/hmall-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-user-web/hmall-user-web.iml" filepath="$PROJECT_DIR$/hmall-user-web/hmall-user-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmall-web-common/hmall-web-common.iml" filepath="$PROJECT_DIR$/hmall-web-common/hmall-web-common.iml" />
+    </modules>
+  </component>
+</project>

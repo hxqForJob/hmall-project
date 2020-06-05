@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gware-manage" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-bean" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-cart-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-cart-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-item-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-list-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-list-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-manage-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-manage-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-order-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-passport-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-payment-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-payment-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-service-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-user-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-user-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hmall-web-common" charset="UTF-8" />
+  </component>
+</project>
