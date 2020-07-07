@@ -63,6 +63,8 @@ public class OrderListener {
             if("DEDUCTED".equals(status)) {
                 //减库存，修改订单状态
                 orderService.updateOrderStatus(orderId,ProcessStatus.WAITING_DELEVER);
+                //
+                message.acknowledge();
             }
             if("OUT_OF_STOCK".equals(status)) {
                 orderService.updateOrderStatus(orderId,ProcessStatus.STOCK_EXCEPTION);

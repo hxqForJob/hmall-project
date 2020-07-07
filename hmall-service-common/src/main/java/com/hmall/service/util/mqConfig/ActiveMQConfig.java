@@ -40,7 +40,7 @@ public class ActiveMQConfig {
         // 设置事务
         factory.setSessionTransacted(false);
         // 自动签收
-        factory.setSessionAcknowledgeMode(Session.SESSION_TRANSACTED);
+        factory.setSessionAcknowledgeMode(Session.CLIENT_ACKNOWLEDGE);
         // 设置并发数
         factory.setConcurrency("5");
         // 重连间隔时间
