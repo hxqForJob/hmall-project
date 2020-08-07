@@ -9,7 +9,7 @@ import javax.jms.Connection;
 import javax.jms.JMSException;
 
 
-@Component
+
 public class ActiveMQUtil {
    PooledConnectionFactory pooledConnectionFactory = null;
    public  void init(String brokerUrl){
