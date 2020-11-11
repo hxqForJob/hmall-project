@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * 需要登录注解
- * hxq
+ * hxqmm
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
