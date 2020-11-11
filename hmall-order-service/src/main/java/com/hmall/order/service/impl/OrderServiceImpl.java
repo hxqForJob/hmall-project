@@ -203,7 +203,7 @@ public class OrderServiceImpl implements OrderService {
      * @param orderId
      */
     @Override
-    public void notifyWare(String orderId) {
+    public void  notifyWare(String orderId) {
         OrderInfo orderAndDetail = getOrderAndDetail(orderId);
         //初始化订单参数
         Map<String,Object> wareParam=initWareParam(orderAndDetail);
